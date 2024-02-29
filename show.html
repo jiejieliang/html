@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改CSS属性</title>
+    <style>
+        #changeElement {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+            /* transition: all 0.3s ease;
+            animation: example 5s infinite alternate; */
+            text-transform: uppercase;
+        }
+
+        @keyframes example {
+            from {background-color: lightblue;}
+            to {background-color: coral;}
+        }
+        @keyframes example2{
+            from{background-color: crimson;}
+            to{background-color: darkgreen;}
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <label for="property">选择属性：</label>
+    <select id="property">
+        <option value="backgroundColor">背景颜色</option>
+        <option value="width">宽度</option>
+        <option value="height">高度</option>
+        <option value="textAlign">文本对齐方式</option>
+        <option value="lineHeight">行高</option>
+        <option value="cursor">光标样式</option>
+        <option value="color">文本颜色</option>
+        <option value="font-size">字体大小</option>
+        <option value="font-weight">字体粗细</option>
+        <option value="display">是否显示</option>
+        <option value="animation">动画</option>
+    </select>
+
+    <div id="changeElement" onclick="showInputPrompt()">点击修改</div>
+    
+    <script>
+        function showInputPrompt() {
+            var property = document.getElementById('property').value;
+            var promptMessage;
+
+            switch (property) {
+                case 'backgroundColor':
+                    promptMessage = '输入颜色名称或十六进制值（例如，red 或 #ff0000）:';
+                    break;
+                case 'width':
+                case 'height':
+                case 'lineHeight':
+                case 'font-size':
+                    promptMessage = '输入一个数值:';
+                    break;
+                case 'textAlign':
+                    promptMessage = '输入以下之一：left、center、right:';
+                    break;
+                case 'cursor':
+                    promptMessage = '输入以下之一：pointer、text、wait等:';
+                    break;
+                case 'color':
+                    promptMessage = '输入颜色名称或十六进制值（例如，blue 或 #0000ff）:';
+                    break;
+                case 'font-weight':
+                    promptMessage = '输入一个数值（100到900之间的整数）:';
+                    break;
+                case 'display':
+                    promptMessage = '输入以下之一：block、inline、none等:';
+                    break;
+                case 'animation':
+                    promptMessage = '输入动画效果名称和参数（例如，example 5s infinite alternate）:';
+                    break;
+                default:
+                    promptMessage = '输入一个值:';
+            }
+
+            var value = prompt(promptMessage);
+
+            if (value !== null && value !== '') {
+                applyStyle(property, value);
+            }
+        }
+
+        function applyStyle(property, value) {
+            var element = document.getElementById('changeElement');
+
+            if (property === 'backgroundColor' || property === 'color') {
+                element.style[property] = value;
+            } else if (property === 'width' || property === 'height' || property === 'lineHeight' || property === 'font-size') {
+                element.style[property] = value + 'px';
+            } else if (property === 'font-weight') {
+                element.style[property] = value;
+            } else if (property === 'display') {
+                element.style[property] = value;
+            } else if (property === 'animation' || property === 'transition') {
+                element.style[property] = value;
+            } else {
+                element.style[property] = value;
+            }
+
+            // 重置下拉菜单的选中状态，以便连续选择同一个属性时也能触发事件
+            document.getElementById('property').selectedIndex = 0;
+        }
+    </script>
+</body>
+</html>

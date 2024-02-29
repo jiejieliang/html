@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web应用技术</title>
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+<ul class="menu">
+    <li>
+        <a href="#" onclick="main()">首页</a>
+    </li>
+    <li>
+        <a href="#">Web 页面设计</a>
+        <ul>
+            <li><a href="#" onclick="showDevEnvironment(1)">开发环境</a></li>
+            <li><a href="#" onclick="showDevEnvironment(2)">HTML标签</a></li>
+            <li><a href="#" onclick="showDevEnvironment(3)">HTML语法</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">界面样式设计</a>
+        <ul>
+            <li><a href="#" onclick="showDevEnvironment(4)">CSS定义</a></li>
+            <li><a href="#" onclick="showDevEnvironment(5)">CSS选择器</a></li>
+            <li><a href="#" onclick="showDevEnvironment(6)">CSS属性</a></li>
+            <li><a href="#" onclick="showDevEnvironment(7)">排版</a></li>
+            <li><a href="#" onclick="showDevEnvironment(8)">布局版式</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">JavaScript编程开发</a>
+        <ul>
+            <li><a href="#" onclick="showDevEnvironment(14)">JavaScript基础</a></li>
+            <li><a href="#" onclick="showDevEnvironment(15)">脚本函数</a></li>
+            <li><a href="#" onclick="showDevEnvironment(16)">事件处理</a></li>
+            <li><a href="#" onclick="showDevEnvironment(17)">DOM</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Web开发框架</a>
+        <ul>
+            <li><a href="#" onclick="showDevEnvironment(18)">Bootstrap</a></li>
+            <li><a href="#" onclick="showDevEnvironment(19)">jQuery</a></li>
+            <li><a href="#" onclick="showDevEnvironment(20)">Highcharts</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Html5 App开发</a>
+        <ul>
+            <li><a href="#" onclick="showDevEnvironment(21)">Html5 App</a></li>
+            <li><a href="#" onclick="showDevEnvironment(22)">WeX5</a></li>
+            <li><a href="#" onclick="showDevEnvironment(23)">DCloud</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Web综合案例</a>
+        <ul>          
+            <li><a href="#" onclick="showDevEnvironment(24)">智能仓储系统设计</a></li>
+        </ul>
+    </li>
+</ul>
+
+<!-- dcloud -->
+<div  class="container13"  id="dcloud" style="display: none;">
+    <h1>DCloud介绍</h1>
+    <p>DCloud（简称“DCloud”）是一家专注于移动应用开发的技术公司，总部位于中国广东省广州市。DCloud 提供了一系列的移动应用开发工具和技术解决方案，旨在帮助开发者快速、高效地构建跨平台的移动应用程序。</p>
+
+    <h2>主要产品和解决方案</h2>
+    <ul>
+        <li>
+            <strong>HBuilderX：</strong>
+            HBuilderX 是 DCloud 推出的一款强大的多平台开发工具，支持 Web、小程序、Hybrid App、Native App 等多种应用类型的开发。它集成了代码编辑、调试、构建、发布等功能，提供了丰富的插件和扩展，能够满足开发者全方位的开发需求。
+        </li>
+        <li>
+            <strong>Uni-app：</strong>
+            Uni-app 是 DCloud 开源的跨平台应用开发框架，基于 Vue.js 开发，并支持编译成多个平台的原生应用，包括微信小程序、H5、App（iOS、Android）、快应用、支付宝小程序、百度小程序、头条小程序等。Uni-app 提供了统一的开发语法和组件体系，极大地简化了跨平台应用的开发流程。
+        </li>
+        <li>
+            <strong>MUI：</strong>
+            MUI 是 DCloud 推出的一款移动端前端框架，基于 HTML5 和 CSS3 技术，提供了丰富的 UI 组件和交互效果，适用于移动 Web 应用和 Hybrid App 的开发。MUI 的特点是轻量、灵活、易用，能够帮助开发者快速构建优秀的移动应用界面。
+        </li>
+        <li>
+            <strong>DCloud社区：</strong>
+            DCloud 社区是一个开发者社区平台，汇集了大量的技术资源、开发工具、教程和案例，开发者可以在社区中交流经验、分享成果、获取技术支持，促进移动应用开发技术的交流和发展。
+        </li>
+    </ul>
+    <p>总之，DCloud 是一家致力于移动应用开发的技术公司，通过提供全面的开发工具和技术解决方案，帮助开发者快速、高效地构建跨平台的移动应用程序。</p>
+
+</div>
+<!-- wex -->
+<div class="container12"  id="wex" style="display: none;">
+    <h2>WeX5 详细介绍</h2>
+    <p><strong>低代码开发：</strong> WeX5 提供了丰富的可视化设计器和组件库，使开发人员无需编写大量代码，即可通过拖拽、配置和连接组件来快速构建应用程序的用户界面和业务逻辑。这种低代码开发模式大大提高了开发效率，降低了开发成本。</p>
+    
+    <p><strong>跨平台应用：</strong> WeX5 支持同时构建适用于 Web、移动端和桌面端的应用程序。开发人员可以使用相同的代码和组件库，针对不同平台进行开发，从而实现跨平台的应用程序部署和管理。</p>
+    
+    <p><strong>丰富的组件库：</strong> WeX5 提供了丰富的组件库，包括界面组件（如表单、列表、图表、地图等）、功能组件（如文件上传、数据导入导出、通知等）、业务组件（如用户管理、权限控制、工作流等）等。开发人员可以根据应用程序的需求，选择合适的组件进行使用和定制。</p>
+    
+    <p><strong>可视化设计器：</strong> WeX5 提供了可视化的应用设计器，通过拖拽组件、设置属性和事件，即可快速构建应用程序的界面和交互逻辑。设计器支持实时预览和调试，帮助开发人员更直观地理解和调整应用程序的结构和行为。</p>
+    
+    <p><strong>集成应用市场：</strong> WeX5 提供了应用市场，开发人员可以在市场中查找、购买或分享各种应用模板、组件和扩展，从而加速应用程序的开发和部署过程。</p>
+    
+    <p><strong>安全和可靠：</strong> WeX5 提供了多层次的安全机制和权限控制，保障应用程序的数据和业务安全。同时，WeX5 采用模块化的架构设计，具有高可靠性和可扩展性，能够满足企业级应用程序的需求。</p>
+    
+    <p><strong>强大的扩展能力：</strong> WeX5 支持插件和扩展机制，开发人员可以自定义和扩展组件库、设计器功能和运行时行为，从而满足特定项目和行业的需求。</p>
+    
+    <p>总之，WeX5 是一个功能强大的低代码开发平台，具有跨平台、可视化、丰富的组件库、安全可靠等特点，为企业级应用程序的开发提供了高效、便捷的解决方案。</p>
+
+</div>
+
+<!-- html5app -->
+<div class="container11"  id="html5app" style="display: none;">
+    <h1>HTML5 App 介绍</h1>
+    <p>HTML5 App 是指基于 HTML5 技术开发的 Web 应用程序，通常在支持 HTML5 的现代浏览器中运行。它们使用 HTML5、CSS3 和 JavaScript 等技术来构建功能丰富的用户界面和交互体验。</p>
+    <p><strong>HTML5 App 具有以下特点：</strong></p>
+    <ol>
+      <li><strong>跨平台性：</strong> HTML5 App 可以在支持 HTML5 的各种设备上运行，包括桌面、平板和手机等。无需针对不同平台单独开发应用程序，可以通过 Web 浏览器直接访问和使用。</li>
+      <li><strong>无需安装：</strong> 与传统的本地应用程序不同，HTML5 App 不需要在用户设备上安装，只需通过浏览器访问相应的 URL 地址即可使用。这降低了用户的使用门槛，同时也减少了维护和更新的成本。</li>
+      <li><strong>即时更新：</strong> 由于 HTML5 App 的代码和资源都托管在服务器上，因此开发人员可以随时更新应用程序的内容和功能，用户无需手动更新，即可享受到最新版本的应用程序。</li>
+      <li><strong>灵活性和可扩展性：</strong> HTML5 App 的开发基于 Web 技术，具有较高的灵活性和可扩展性。开发人员可以利用 HTML、CSS 和 JavaScript 等技术创建丰富的用户界面和交互效果，同时通过 Web API 与设备硬件进行交互，实现更多功能。</li>
+      <li><strong>适应性：</strong> HTML5 App 可以根据不同的设备和屏幕尺寸进行自适应布局和响应式设计，以确保在各种设备上都能提供良好的用户体验。</li>
+      <li><strong>与云服务集成：</strong> HTML5 App 可以与云服务进行集成，实现数据存储、用户认证、推送通知等功能，从而为用户提供更加全面和便捷的服务。</li>
+    </ol>
+    <p>总之，HTML5 App 是一种基于 HTML5 技术构建的跨平台、无需安装、即时更新、灵活可扩展的 Web 应用程序，具有广泛的应用前景，在各种场景下都得到了广泛的应用和推广。</p>
+  </div>
+<!-- charts -->
+<div class="container10"  id="charts" style="display: none;">
+    <h1>详细介绍 Highcharts</h1>
+    <p><strong>Highcharts</strong> 是一个流行的 JavaScript 图表库，用于创建交互式和动态的图表和数据可视化。</p>
+    
+    <h2>主要特点：</h2>
+    <ul>
+        <li><strong>丰富的图表类型：</strong>Highcharts 提供了丰富的图表类型，包括线型图、区域图、柱状图、饼图、散点图、气泡图、箱线图、热力图等。开发人员可以根据需要选择合适的图表类型来呈现数据。</li>
+        <li><strong>灵活的配置选项：</strong>Highcharts 具有灵活的配置选项，可以轻松地自定义图表的样式、颜色、标签、图例等各个方面，以满足用户的需求，并实现各种复杂的图表效果。</li>
+        <li><strong>交互式操作：</strong>Highcharts 支持各种交互式操作，如缩放、平移、数据点悬停、点击事件等。用户可以通过交互操作与图表进行互动，查看详细信息、比较数据、筛选数据等。</li>
+        <li><strong>动态更新：</strong>Highcharts 允许开发人员动态更新图表数据，而无需重新加载整个页面。通过简单的 API 调用，可以实现图表数据的实时更新，使得图表能够动态地反映数据的变化。</li>
+        <li><strong>跨浏览器兼容性：</strong>Highcharts 兼容性良好，可以在各种现代浏览器和移动设备上正常运行，包括 Chrome、Firefox、Safari、Edge 等主流浏览器，以及 iOS 和 Android 等移动平台。</li>
+        <li><strong>丰富的文档和示例：</strong>Highcharts 提供了详细的文档和丰富的示例，帮助开发人员快速上手并深入了解其功能和用法。文档中包含了各种配置选项、API 方法、事件处理等内容，以及大量的示例代码，方便开发人员参考和使用。</li>
+        <li><strong>支持扩展插件：</strong>Highcharts 提供了丰富的扩展插件和模块化功能，开发人员可以根据需要扩展其功能，或者集成第三方插件，以实现更多复杂的图表效果和功能。</li>
+    </ul>
+    
+    <p>总之，Highcharts 是一个功能强大、灵活易用的 JavaScript 图表库，广泛应用于各种 Web 应用程序和数据可视化项目中，为用户提供了丰富、交互式和动态的数据展示方式。</p>
+</div>
+<!-- jquery -->
+<div class="container9" id="jquery" style="display: none;">
+    <h1>详细介绍 jQuery</h1>
+    <p><strong>jQuery</strong> 是一个流行的 JavaScript 库，提供了简洁的 API，用于简化对 HTML 文档、事件、动画和 AJAX 的操作。</p>
+    
+    <h2>主要特点：</h2>
+    <ul>
+        <li><strong>简化 DOM 操作：</strong>jQuery 提供了许多简单易用的方法，用于选择、操作和遍历 DOM 元素。通过 jQuery，可以使用类似 CSS 选择器的语法轻松地选择页面中的元素，并且可以对这些元素进行各种操作，如修改内容、样式、属性等。</li>
+        <li><strong>事件处理：</strong>jQuery 允许开发人员使用简单的语法来附加和处理事件，如点击、鼠标悬停、键盘按键等。这使得事件处理变得更加简洁和易于理解。</li>
+        <li><strong>动画和效果：</strong>jQuery 提供了丰富的动画和效果方法，如淡入淡出、滑动、隐藏和显示等，可以轻松地为网页添加各种动画效果，增强用户体验。</li>
+        <li><strong>AJAX：</strong>jQuery 提供了简单易用的 AJAX 方法，使得与服务器进行异步通信变得更加方便。通过 jQuery AJAX 方法，可以发送 HTTP 请求、处理响应数据，并在页面上动态更新内容，而无需重新加载整个页面。</li>
+        <li><strong>跨浏览器兼容性：</strong>jQuery 解决了许多浏览器兼容性问题，使开发人员能够编写一致性的代码，并确保在各种现代浏览器中都能正常运行。</li>
+        <li><strong>丰富的插件生态系统：</strong>jQuery 拥有庞大的插件生态系统，开发人员可以轻松地使用各种插件扩展 jQuery 的功能，以满足特定需求，如图表库、日期选择器、轮播图等。</li>
+        <li><strong>简洁的语法和文档：</strong>jQuery 的语法简洁清晰，易于学习和使用。此外，jQuery 提供了详细的文档和示例，帮助开发人员快速上手，并解决在开发过程中遇到的问题。</li>
+    </ul>
+    
+    <p>总之，jQuery 是一个强大而又简洁的 JavaScript 库，为开发人员提供了丰富的功能和便捷的工具，使得前端开发变得更加快捷、高效和愉悦。</p>
+</div>
+
+<!-- webbootstrap -->
+<div class="container8" id="boot" style="display: none;">
+    <h1>Bootstrap简介</h1>
+    <p>Bootstrap 是一个流行的开源前端框架，用于开发响应式和移动设备优先的网站和 Web 应用程序。它由 Twitter 的一些开发人员创建，并于 2011 年首次发布。</p>
+
+    <h2>主要特点：</h2>
+    <ul>
+        <li><strong>响应式设计：</strong>Bootstrap 提供了响应式的网格系统，可以根据屏幕大小自动调整布局，确保网站在不同设备上都具有良好的显示效果。</li>
+        <li><strong>移动设备优先：</strong>Bootstrap 设计理念是从移动设备开始，然后逐渐适应更大的屏幕，因此能够很好地支持移动端设备。</li>
+        <li><strong>内置的 CSS 样式和组件：</strong>Bootstrap 包含了大量预定义的 CSS 样式和 UI 组件，如按钮、表单、导航栏等，能够帮助开发人员快速构建漂亮的界面。</li>
+        <li><strong>简洁、一致的设计风格：</strong>Bootstrap 的设计风格简洁明了，组件和样式之间保持一致性，使得开发人员可以更加轻松地创建具有统一风格的网站和应用程序。</li>
+        <li><strong>可定制性：</strong>Bootstrap 提供了丰富的定制选项，开发人员可以根据项目需求轻松地定制样式和组件，使其符合项目的设计风格和需求。</li>
+        <li><strong>社区支持和文档丰富：</strong>由于 Bootstrap 是一个开源项目，拥有庞大的社区支持，开发人员可以从社区获取到大量的资源、模板和解决方案。</li>
+    </ul>
+    
+    <p>总之，Bootstrap 是一个功能强大、灵活、易于使用的前端框架，适用于各种 Web 开发项目，特别是需要快速开发响应式和移动友好界面的项目。</p>
+</div>
+
+<!-- dom -->
+<div class="dom" id="domid" style="display: none;">
+    <h1>JavaScript中的DOM介绍</h1>
+    <p>在JavaScript中，DOM（文档对象模型）是一种表示和处理HTML和XML文档的标准。它将文档解析为一个由层级节点（node）组成的树结构，树的每个节点都代表文档中的一个元素、属性、文本片段或者其他类型的节点。通过DOM，JavaScript可以动态地访问、更新和修改HTML文档的内容、结构和样式，以及对文档中的事件进行响应。</p>
+
+    <h2>关于DOM的重要概念：</h2>
+    <ul>
+        <li>节点（Nodes）：</li>
+        <ul>
+            <li>DOM树中的每个部分都是一个节点。节点可以是元素节点、属性节点、文本节点等。</li>
+        </ul>
+        <li>元素节点（Element Nodes）：</li>
+        <ul>
+            <li>表示HTML文档中的元素，例如&lt;div&gt;、&lt;p&gt;、&lt;a&gt;等标签对应的节点。</li>
+        </ul>
+        <li>属性节点（Attribute Nodes）：</li>
+        <ul>
+            <li>表示HTML元素的属性，例如元素的id、class、src等属性。</li>
+        </ul>
+        <li>文本节点（Text Nodes）：</li>
+        <ul>
+            <li>表示HTML文档中的文本内容，例如&lt;p&gt;标签中的文字内容。</li>
+        </ul>
+        <li>父节点、子节点和兄弟节点：</li>
+        <ul>
+            <li>父节点是指包含其他节点的节点，子节点是指某节点的直接后代节点，兄弟节点是指具有同一父节点的节点。</li>
+        </ul>
+        <li>DOM操作：</li>
+        <ul>
+            <li>JavaScript可以通过DOM提供的API对文档进行各种操作，如创建、移动、删除节点，修改节点的属性和内容，以及注册事件监听器等。</li>
+        </ul>
+        <li>事件处理：</li>
+        <ul>
+            <li>JavaScript可以通过DOM来注册事件监听器，以响应用户的交互操作，如单击按钮、输入文本等。</li>
+        </ul>
+        <li>动态更新：</li>
+        <ul>
+            <li>JavaScript可以通过DOM实现对页面的动态更新，例如添加新的HTML元素、改变样式、移动元素位置等。</li>
+        </ul>
+    </ul>
+    <img fetchpriority="high" decoding="async"  src="../pic/pic_htmltree.gif" alt="DOM HTML tree" width="486" height="266">
+    <br>
+    <h1>DOM常用方法</h1>
+    <div class="domcode" id="domcodeid">
+        <h1>常见的DOM用法示例</h1>
+    <p>以下是几个常见的DOM用法示例：</p>
+
+    <div class="code-section">
+        <h2>获取元素：</h2>
+        <pre><code>// 通过id获取元素
+var elementById = document.getElementById('myElementId');
+
+// 通过类名获取元素（返回一个数组）
+var elementsByClassName = document.getElementsByClassName('myClassName');
+
+// 通过标签名获取元素（返回一个数组）
+var elementsByTagName = document.getElementsByTagName('div');
+        </code></pre>
+    </div>
+
+    <div class="code-section">
+        <h2>修改元素内容和样式：</h2>
+        <pre><code>// 修改元素文本内容
+elementById.textContent = '新的文本内容';
+
+// 修改元素样式
+elementById.style.color = 'red';
+        </code></pre>
+    </div>
+
+    <div class="code-section">
+        <h2>创建新元素并添加到文档中：</h2>
+        <pre><code>// 创建新元素
+var newElement = document.createElement('p');
+newElement.textContent = '这是新添加的段落。';
+
+// 将新元素添加到文档中的某个元素内部
+document.body.appendChild(newElement);
+        </code></pre>
+    </div>
+
+    <div class="code-section">
+        <h2>注册事件监听器：</h2>
+        <pre><code>// 注册点击事件监听器
+elementById.addEventListener('click', function() {
+    console.log('元素被点击了！');
+});
+        </code></pre>
+    </div>
+
+    <div class="code-section">
+        <h2>移除元素：</h2>
+        <pre><code>// 移除元素
+var parentElement = document.getElementById('parentElementId');
+var childElement = document.getElementById('childElementId');
+parentElement.removeChild(childElement);
+        </code></pre>
+    </div>
+
+    <p>通过这些示例，你可以了解到一些常见的DOM操作用法。</p>
+    </div>
+</div>
+
+<!-- thing -->
+<div class="jsthing" id="jsthingid" style="display: none;">
+    <h1>JavaScript Event Handling</h1>
+    <p>JavaScript中的事件处理包括许多不同类型的事件，这些事件可以在用户与页面交互时触发。以下是一些常见的JavaScript事件处理方式：</p>
+
+    <h2>鼠标事件（Mouse Events）：</h2>
+    <ul>
+        <li>click：当用户单击鼠标按钮时触发。</li>
+        <li>mouseover：当鼠标指针位于元素上方时触发。</li>
+        <li>mouseout：当鼠标指针从元素移出时触发。</li>
+        <li>mousedown：当鼠标按钮被按下时触发。</li>
+        <li>mouseup：当鼠标按钮被释放时触发。</li>
+    </ul>
+
+    <h2>键盘事件（Keyboard Events）：</h2>
+    <ul>
+        <li>keydown：当用户按下键盘上的任意键时触发。</li>
+        <li>keyup：当用户释放键盘上的键时触发。</li>
+        <li>keypress：当用户按下键盘上的字符键时触发。</li>
+    </ul>
+
+    <h2>表单事件（Form Events）：</h2>
+    <ul>
+        <li>submit：当用户提交表单时触发。</li>
+        <li>input：当输入框的内容发生变化时触发。</li>
+        <li>change：当表单字段的值发生变化时触发（适用于输入框、下拉菜单等）。</li>
+    </ul>
+
+    <h2>窗口事件（Window Events）：</h2>
+    <ul>
+        <li>load：当页面完全加载时触发。</li>
+        <li>resize：当窗口大小发生变化时触发。</li>
+        <li>scroll：当页面滚动时触发。</li>
+    </ul>
+
+    <h2>焦点事件（Focus Events）：</h2>
+    <ul>
+        <li>focus：当元素获得焦点时触发。</li>
+        <li>blur：当元素失去焦点时触发。</li>
+    </ul>
+
+    <h2>触摸事件（Touch Events）：</h2>
+    <ul>
+        <li>touchstart：当手指触摸屏幕时触发。</li>
+        <li>touchmove：当手指在屏幕上滑动时触发。</li>
+        <li>touchend：当手指离开屏幕时触发。</li>
+    </ul>
+
+    <h2>拖放事件（Drag and Drop Events）：</h2>
+    <ul>
+        <li>dragstart：当用户开始拖动元素时触发。</li>
+        <li>drag：当拖动元素时触发。</li>
+        <li>dragend：当用户完成拖动操作时触发。</li>
+    </ul>
+
+    <h2>鼠标滚轮事件（Mouse Wheel Events）：</h2>
+    <ul>
+        <li>wheel：当用户使用鼠标滚轮时触发。</li>
+    </ul>
+
+    <h2>动画事件（Animation Events）：</h2>
+    <ul>
+        <li>animationstart：当CSS动画开始播放时触发。</li>
+        <li>animationend：当CSS动画完成播放时触发。</li>
+        <li>animationiteration：当CSS动画重复播放时触发。</li>
+    </ul>
+
+    <h2>过渡事件（Transition Events）：</h2>
+    <ul>
+        <li>transitionend：当CSS过渡完成时触发。</li>
+    </ul>
+</div>
+
+<!-- js脚本函数 -->
+<div class="jsfunction" id="jsfuncid" style="display: none;">
+    <h1>JavaScript Function Types</h1>
+    <p>JavaScript中可以创建各种不同类型的函数，每种函数类型都有其特定的用途和语法。</p>
+    
+    <h2>1. 命名函数（Named Function）</h2>
+    <p>命名函数是通过函数名来定义的，可以在任何地方进行调用。</p>
+    <pre><code>
+function add(x, y) {
+    return x + y;
+}
+    </code></pre>
+
+    <h2>2. 匿名函数（Anonymous Function）</h2>
+    <p>匿名函数是指没有函数名的函数，通常赋值给变量或作为参数传递给其他函数。</p>
+    <pre><code>
+var multiply = function(x, y) {
+    return x * y;
+};
+    </code></pre>
+
+    <h2>3. 自调用函数（Immediately Invoked Function Expression - IIFE）</h2>
+    <p>自调用函数是在声明后立即执行的函数，通常用于创建作用域以避免变量污染。</p>
+    <pre><code>
+(function() {
+    // 这里是函数体
+})();
+    </code></pre>
+
+    <h2>4. 箭头函数（Arrow Function）（ES6新增）</h2>
+    <p>箭头函数是一种简写的函数表达式，具有更简洁的语法和绑定this的特性。</p>
+    <pre><code>
+var subtract = (x, y) => x - y;
+    </code></pre>
+
+    <h2>5. 构造函数（Constructor Function）</h2>
+    <p>构造函数用于创建对象的实例，通常以大写字母开头，并使用"new"关键字进行调用。</p>
+    <pre><code>
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+var person1 = new Person('Alice', 30);
+    </code></pre>
+
+    <h2>6. 方法函数（Method Function）</h2>
+    <p>方法函数是在对象中定义的函数，通常用于操作对象的数据或执行特定的任务。</p>
+    <pre><code>
+var obj = {
+    sayHello: function() {
+        console.log('Hello');
+    }
+};
+    </code></pre>
+
+    <h2>7. 回调函数（Callback Function）</h2>
+    <p>回调函数是作为参数传递给另一个函数的函数，在特定的事件发生时被调用。</p>
+    <pre><code>
+function fetchData(url, callback) {
+    // 获取数据的逻辑
+    callback(data);
+}
+    </code></pre>
+
+    <h2>8. 递归函数（Recursive Function）</h2>
+    <p>递归函数是调用自身的函数，通常用于解决需要重复执行相同任务的问题。</p>
+    <pre><code>
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+    </code></pre>
+
+    <h2>9. 生成器函数（Generator Function）（ES6新增）</h2>
+    <p>生成器函数用于创建迭代器对象，通过yield关键字可以暂停和恢复函数执行。</p>
+    <pre><code>
+function* generator() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+    </code></pre>
+
+    <h2>10. 异步函数（Async Function）（ES2017新增）</h2>
+    <p>异步函数是一种异步操作的函数，使用async和await关键字简化了异步编程的语法。</p>
+    <pre><code>
+async function fetchData(url) {
+    let response = await fetch(url);
+    let data = await response.json();
+    return data;
+}
+    </code></pre>
+
+</div>
+<!-- js基础 -->
+<div class="container7" style="display: none;" id="js">
+    <h2>JavaScript 介绍</h2>
+    
+    <h3>JavaScript 概述</h3>
+    <p>JavaScript（JS）是一种高级的、解释性的编程语言，主要用于网页开发中的交互式功能。它被广泛应用于 Web 开发中，用于操作网页的内容、结构和样式，使用户与网页进行交互。</p>
+    
+    <h3>JavaScript 的特点</h3>
+    <ul>
+      <li>客户端脚本语言：JavaScript 主要运行在浏览器中，作为网页的一部分，用于改变网页内容、响应用户操作、验证表单数据等。随着 Node.js 的出现，JavaScript 也可以在服务器端运行。</li>
+      <li>弱类型语言：JavaScript 是一种动态类型的语言，变量的数据类型在运行时可以改变，不需要显式声明类型。</li>
+      <li>基于对象的语言：JavaScript 是一种基于对象的语言，所有内容都是对象，包括原始数据类型（如字符串、数值、布尔值）、数组、函数等。</li>
+      <li>事件驱动：JavaScript 是事件驱动的语言，可以响应用户的交互行为（如点击、输入等），并执行相应的操作。</li>
+      <li>语法灵活：JavaScript 的语法简洁灵活，支持面向对象编程、函数式编程、原型继承等多种编程范式。</li>
+      <li>与 HTML 和 CSS 集成：JavaScript 可以直接嵌入到 HTML 页面中，并与 HTML 元素、CSS 样式进行交互，实现动态效果和复杂的布局。</li>
+    </ul>
+    
+    <h3>JavaScript 的应用领域</h3>
+    <ul>
+      <li>网页交互：实现网页的动态效果、用户输入验证、表单处理等。</li>
+      <li>前端框架：例如 React、Angular、Vue.js 等，用于构建复杂的前端应用程序。</li>
+      <li>服务器端开发：借助 Node.js，JavaScript 可以用于构建服务器端应用程序，处理后端逻辑和数据库操作。</li>
+      <li>移动应用开发：通过框架如 React Native 或 Ionic，JavaScript 可以用于开发跨平台的移动应用程序。</li>
+      <li>游戏开发：借助 HTML5 技术和游戏引擎，JavaScript 可以用于开发基于网页的游戏。</li>
+    </ul>
+    
+    <p>总之，JavaScript 是一种多功能的、用途广泛的编程语言，是 Web 开发中不可或缺的一部分，它为网页提供了丰富的交互功能和动态效果，也在其他领域展现了强大的潜力和应用价值。</p>
+  </div>
+  
+<!-- css排版 -->
+<div class="csspb" id="csspbid" style="display: none;">
+    <h2>CSS排版介绍</h2>
+    <p><strong>CSS排版</strong>是指使用CSS（层叠样式表）来控制网页中元素的布局和外观。通过CSS排版，可以调整和控制HTML元素的位置、大小、间距、对齐等样式属性，从而实现网页设计的需求。</p>
+    <p>在进行CSS排版时，设计者可以利用各种CSS属性和技巧来实现不同的布局效果，包括但不限于：</p>
+    <ul>
+      <li><strong>盒子模型（Box Model）：</strong>CSS中的盒子模型描述了每个元素在页面上所占据的空间，包括内容区域、内边距、边框和外边距。通过调整这些属性，可以控制元素的尺寸和间距。</li>
+      <li><strong>浮动（Float）：</strong>浮动是一种布局技术，使元素可以脱离文档流并向左或向右移动，使得其他元素可以环绕在其周围。浮动常用于创建多栏布局和实现图文混排效果。</li>
+      <li><strong>定位（Positioning）：</strong>定位是一种精确控制元素位置的方式，包括相对定位、绝对定位和固定定位等。相对定位是相对于元素在正常文档流中的位置进行定位，而绝对定位是相对于最近的已定位的父元素进行定位，固定定位则是相对于视口进行定位。</li>
+      <li><strong>Flexbox布局：</strong>Flexbox是一种弹性盒子布局模型，通过将容器内的项目进行伸缩、排列和对齐，实现了更加灵活和自适应的布局效果。Flexbox布局适用于水平和垂直方向上的排列，并提供了强大的对齐和分配空间的功能。</li>
+      <li><strong>Grid布局：</strong>Grid布局是一种二维网格布局模型，通过在容器中创建行和列的网格结构，可以更加直观地控制元素的位置和尺寸。Grid布局适用于复杂的网格结构和多列布局，并提供了丰富的布局功能。</li>
+    </ul>
+    <p><strong>CSS排版</strong>是网页设计的重要组成部分，它不仅可以实现各种独特和复杂的布局效果，还可以提高页面的可读性、可访问性和用户体验。通过合理地运用CSS排版技术，设计者可以创建出符合设计要求和用户期待的各种网页布局。</p>
+</div>
+
+<!-- css选择器 -->
+<div class="css1" id="css1" style="display: none;">
+    <h1>CSS选择器介绍</h1>
+    <p>选择器是CSS中用于选择要应用样式的HTML元素的一种方式。以下是常见的CSS选择器：</p>
+    <h2>1. 元素选择器</h2>
+    <p>通过元素名称选择要应用样式的元素。</p>
+    <code>p &#123; color: red; &#125;</code>
+    <h2>2. 类选择器</h2>
+    <p>通过类名选择要应用样式的元素。</p>
+    <code>.class-name &#123; color: blue; &#125;</code>
+    <h2>3. ID选择器</h2>
+    <p>通过元素ID选择要应用样式的元素。</p>
+    <code>#element-id &#123; color: green; &#125;</code>
+    <h2>4. 属性选择器</h2>
+    <p>通过元素的属性选择要应用样式的元素。</p>
+    <code>[type="text"] &#123; color: orange; &#125;</code>
+    <h2 id="hover" onclick="showCode(1)">5. 伪类选择器</h2>
+
+    <div class="hovermesg" id="hovermesgid" style="display: none;">
+        <span style="color: brown;">鼠标移动到该处颜色发生改变</span>
+        <code>
+            <br>.hovermesg span:hover {
+                background-color: rgb(169, 236, 236);
+            }
+        </code>
+    </div>
+
+    <p>通过元素的特定状态选择要应用样式的元素，如:hover、:active等。</p>
+    <code>a:hover &#123; color: purple; &#125;</code>
+    <h2 id="hoverele" onclick="showCode(2)">6. 伪元素选择器</h2>
+
+    <div class="hoverelemesg" id="hovereleid" style="display: none;">
+        <p>这是第一段内容 加粗淡蓝色<br>这是第二行文本正常显示</p>
+        <code>
+            #hovereleid p::first-line{
+                font-weight: bold;
+                color: aqua;
+            }
+        </code>
+    </div>
+
+    <p>通过元素的特定部分选择要应用样式的元素，如::before、::after等。</p>
+    <code>p::first-line &#123; font-weight: bold; &#125;</code>
+</div>
+
+<!-- css布局 -->
+<div class="csslayout" id="csslayoutid" style="display: none;">
+    <div class="box-model" id="boxid" onclick="showDevEnvironment(9)">
+        <h2>盒子模型（Box Model）：</h2>
+        <p>介绍：盒子模型描述了 HTML 元素在页面上所占据的空间，包括内容区域、内边距、边框和外边距。</p>
+        <p>示例代码：</p>
+        <code>
+            &lt;div class="box-model"&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;Content&lt;/p&gt;<br>
+            &lt;/div&gt;
+        </code>
+    </div>
+
+    <div class="float-layout" id="floatid" onclick="showDevEnvironment(10)">
+        <h2>浮动布局（Float Layout）：</h2>
+        <p>介绍：通过浮动可以使元素脱离文档流，使其他元素环绕在其周围，常用于创建多栏布局和实现图文混排效果。</p>
+        <p>示例代码：</p>
+        <code>
+            &lt;div class="float-layout"&gt;Left Column&lt;/div&gt;<br>
+            &lt;div class="float-layout"&gt;Right Column&lt;/div&gt;
+        </code>
+    </div>
+
+    <div class="positioning-layout" id="positid" onclick="showDevEnvironment(11)">
+        <h2>定位布局（Positioning Layout）：</h2>
+        <p>介绍：通过定位属性可以对元素进行精确定位，包括相对定位、绝对定位和固定定位。</p>
+        <p>示例代码：</p>
+        <code>
+            &lt;div class="positioning-layout"&gt;Relative Positioning&lt;/div&gt;<br>
+            &lt;div class="positioning-layout" style="position: absolute; top: 50px; left: 100px;"&gt;Absolute Positioning&lt;/div&gt;<br>
+            &lt;div class="positioning-layout" style="position: fixed; top: 10px; right: 10px;"&gt;Fixed Positioning&lt;/div&gt;
+        </code>
+    </div>
+
+    <div class="flexbox-layout" id="flexid" onclick="showDevEnvironment(12)">
+        <h2>Flexbox布局：</h2>
+        <p>介绍：Flexbox是一种弹性盒子布局模型，通过将容器内的项目进行伸缩、排列和对齐，实现了更加灵活和自适应的布局效果。</p>
+        <p>示例代码：</p>
+        <code>
+            &lt;div class="flexbox-layout"&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;Item 1&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;Item 2&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;Item 3&lt;/div&gt;<br>
+            &lt;/div&gt;
+        </code>
+    </div>
+
+    <div class="grid-layout" id="gridid" onclick="showDevEnvironment(13)">
+        <h2>Grid布局：</h2>
+        <p>介绍：Grid布局是一种二维网格布局模型，通过在容器中创建行和列的网格结构，可以更加直观地控制元素的位置和尺寸。</p>
+        <p>示例代码：</p>
+        <code>
+            &lt;div class="grid-layout"&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;Item 1&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;Item 2&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;div&gt;Item 3&lt;/div&gt;<br>
+            &lt;/div&gt;
+        </code>
+    </div>
+</div>
+<!-- 布局样式展示 -->
+<!-- box -->
+<div id="box" style="display: none; 
+                    width: 200px;
+                    height: 200px;
+                    padding: 20px;
+                    margin: 50px;
+                    border: 5px solid #333;
+                    background-color: #f0f0f0;">
+    <div class="box">This is a box with padding, margin, border, and background color.</div>
+</div>
+
+<!-- float -->
+<div id="float" style="display: none;"> 
+    <h3>没有添加浮动</h3>
+    <div class="demo1"> </div>  
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <br>
+    <h3>添加浮动</h3>
+    <div class="demo4"> </div>  
+    <div class="demo5"></div>
+    <div class="demo6"></div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="container6">
+        <h2>浮动布局介绍</h2>
+        <p>浮动布局是一种常见的 CSS 布局技术，它通过使元素脱离正常的文档流，使得其他元素可以环绕在其周围，从而实现多栏布局、图文混排等效果。以下是对浮动布局的简要介绍：</p>
+        <h3>浮动属性：</h3>
+        <p>通过设置元素的 <code>float</code> 属性为 <code>left</code> 或 <code>right</code>，使元素向左或向右浮动，脱离文档流。<br>
+        浮动元素会尽可能地靠近包含它的父容器的边缘，并且会影响其他元素的布局。</p>
+        
+        <h3>多栏布局：</h3>
+        <p>浮动布局常用于创建多栏布局。通过将多个元素设置为浮动，可以实现多列的排列效果。<br>
+        通常情况下，需要注意清除浮动以防止父容器塌陷。</p>
+        
+        <h3>图文混排：</h3>
+        <p>浮动布局也常用于实现图文混排的效果，例如让文字环绕在图片周围。<br>
+        将图片设置为浮动，使得文本可以环绕在图片周围，从而实现图文混排的效果。</p>
+        
+        <h3>注意事项：</h3>
+        <p>浮动元素可能会导致父容器的高度塌陷，影响布局，需要通过清除浮动或者其他方式来解决。<br>
+        使用浮动布局时，需要注意浮动元素的顺序，以确保布局的正确性和可维护性。</p>
+      </div>
+</div>
+<!-- posit> -->
+<div id="posit" style="display: none;">
+    <div class="container1">
+        <div class="absolute-box1"></div>
+        <div class="relative-box1"></div>
+        <div class="fixed-box1"></div>
+      </div>
+      <div class="absolute-box2">
+        <p>absolute-box 使用绝对定位（position: absolute;），它相对于最近的具有定位属性的父元素（这里是 .container）进行定位。</p>
+      </div>
+      <div class="relative-box2">
+        <p>relative-box 使用相对定位（position: relative;），它相对于自身在正常文档流中的位置进行偏移。</p>
+      </div>
+      <div class="fixed-box2">
+        <p>fixed-box 使用固定定位（position: fixed;），它相对于视口进行定位，不随滚动而变化位置。</p>
+      </div>
+    </div>
+</div>
+
+<div id="flex" style="display: none;">
+    <div class="container3">
+        <div class="item2">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item2">Item 3</div>
+      </div>
+      <p>水平方向拉伸后，可以自动调整水平宽度</p>
+      <img src="../pic/flex.png">
+</div>
+
+<div id="grid" style="display: none;">
+    <div class="container4">
+        <div class="item4">Item 1</div>
+        <div class="item4">Item 2</div>
+        <div class="item4">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item4">Item 5</div>
+        <div class="item4">Item 6</div>
+      </div>
+      <div class="container5">
+        <p><strong>容器与项目：</strong><br>
+          Grid 布局通过定义容器和项目来实现。容器是应用 Grid 布局的父元素，通过设置其为 <code>display: grid;</code> 或 <code>display: inline-grid;</code> 来启用 Grid 布局。项目则是容器内的子元素，它们将按照 Grid 规则进行布局。
+        </p>
+        <p><strong>网格行和列：</strong><br>
+          Grid 布局通过定义网格行和列来划分布局空间。您可以使用 <code>grid-template-rows</code> 和 <code>grid-template-columns</code> 属性来定义网格的行和列数量、大小和自动布局。例如，<code>grid-template-columns: 100px 200px auto;</code> 定义了三列，其中第一列宽度为 100px，第二列宽度为 200px，第三列自动填充剩余空间。
+        </p>
+        <p><strong>网格单元格：</strong><br>
+          容器内的每个项目占据一个或多个网格单元格。您可以使用 <code>grid-column</code> 和 <code>grid-row</code> 属性来指定项目所占据的列和行。例如，<code>grid-column: 1 / 3;</code> 意味着项目跨越了第一列和第二列。
+        </p>
+        <p><strong>网格间距：</strong><br>
+          您可以使用 <code>grid-gap</code> 或 <code>gap</code> 属性来设置网格行和列之间的间距。这些间距可以是固定值或自动计算的。
+        </p>
+        <p><strong>自动布局：</strong><br>
+          Grid 布局支持自动布局，即在未显式定义网格行和列的情况下，根据项目的大小和位置自动创建网格布局。
+        </p>
+        <p><strong>对齐和排列：</strong><br>
+          Grid 布局提供了丰富的对齐和排列方式，如水平和垂直居中、项目在网格区域内的对齐等。您可以使用 <code>justify-items</code>、<code>align-items</code>、<code>justify-content</code>、<code>align-content</code> 等属性来控制项目的对齐和容器的对齐。
+        </p>
+      </div>
+</div>
+
+
+<!-- css属性 -->
+<div id="test" style="display: none;">
+     <div class="select">
+        <h2 id="selectstyle"><a href="./show.html">属性配置体验</a></h2>
+    </div>
+    <div class="background-properties">
+        <h2>背景属性（Background Properties）：</h2>
+        <p>background-color：设置背景颜色。</p>
+        <p>background-image：设置背景图像。</p>
+        <p>background-repeat：设置背景图像的平铺方式。</p>
+        <p>background-position：设置背景图像的位置。</p>
+        <p>background-size：设置背景图像的尺寸。</p>
+        <p>background-attachment：设置背景图像的滚动方式。</p>
+    </div>
+    <div class="dimension-margin-properties">
+        <h2>尺寸和边距属性（Dimension and Margin Properties）：</h2>
+        <p>width：设置元素的宽度。</p>
+        <p>height：设置元素的高度。</p>
+        <p>margin：设置元素的外边距。</p>
+        <p>padding：设置元素的内边距。</p>
+    </div>
+    <div class="text-properties">
+        <h2>文本属性（Text Properties）：</h2>
+        <p>color：设置文本颜色。</p>
+        <p>font-family：设置字体系列。</p>
+        <p>font-size：设置字体大小。</p>
+        <p>font-weight：设置字体粗细。</p>
+        <p>text-align：设置文本水平对齐方式。</p>
+        <p>line-height：设置行高。</p>
+        <p>text-decoration：设置文本装饰效果，如下划线、删除线等。</p>
+        <p>text-transform：设置文本转换，如大写、小写等。</p>
+        <p>letter-spacing：设置字符间距。</p>
+        <p>word-spacing：设置词间距。</p>
+    </div>
+    <div class="layout-properties">
+        <h2>布局属性（Layout Properties）：</h2>
+        <p>display：设置元素的显示方式。</p>
+        <p>position：设置元素的定位方式。</p>
+        <p>float：设置元素的浮动方式。</p>
+        <p>clear：设置元素的清除方式。</p>
+        <p>overflow：设置溢出内容的处理方式。</p>
+        <p>z-index：设置元素的堆叠顺序。</p>
+    </div>
+      
+    
+    <div class="border-properties">
+        <h2>边框属性（Border Properties）：</h2>
+        <p>border：设置边框样式、宽度和颜色。</p>
+        <p>border-radius：设置边框的圆角半径。</p>
+        <p>border-color：设置边框颜色。</p>
+        <p>border-width：设置边框宽度。</p>
+        <p>border-style：设置边框样式。</p>
+    </div>
+    <div class="animation-transition-properties">
+        <h2>动画和过渡属性（Animation and Transition Properties）：</h2>
+        <p>animation：设置动画效果。</p>
+        <p>transition：设置过渡效果。</p>
+        <p>鼠标悬停此处体验过渡效果。</p>
+    </div>
+   
+
+</div>
+
+
+<!-- css介绍 -->
+<div class="css" id="css" style="display: none;">
+    <h1>CSS介绍</h1>
+    <p>CSS（层叠样式表）是一种用于描述网页样式和布局的语言。</p>
+    <h2>1. 语法结构</h2>
+    <p>CSS由选择器和声明组成：</p>
+    <code>
+        selector &#123; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; property: value; <br>
+        &#125;
+    </code>
+    <h2>2. 样式的应用方式</h2>
+    <ul>
+        <li>内联样式：<code>&lt;p style="color: red;"&gt;This is a paragraph.&lt;/p&gt;</code></li>
+        <li>内部样式表：<code>&lt;style&gt; p &#123; color: red; &#125; &lt;/style&gt;</code></li>
+        <li>外部样式表：<code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></li>
+    </ul>
+    <h2>3. 选择器</h2>
+    <p>常见的选择器包括：</p>
+    <ul>
+        <li>元素选择器：<code>p &#123; color: red; &#125;</code></li>
+        <li>类选择器：<code>.class-name &#123; color: blue; &#125;</code></li>
+        <li>ID选择器：<code>#element-id &#123; color: green; &#125;</code></li>
+        <li>属性选择器：<code>[type="text"] &#123; color: orange; &#125;</code></li>
+    </ul>
+    <h2>4. 样式属性</h2>
+    <p>常见的样式属性包括：</p>
+    <ul>
+        <li>颜色和背景：color、background-color、background-image等</li>
+        <li>字体：font-family、font-size、font-weight等</li>
+        <li>布局：width、height、margin、padding等</li>
+    </ul>
+    <h2>5. 盒模型</h2>
+    <p>CSS中的每个元素都被视为一个矩形框（盒子），其包含内容、内边距、边框和外边距。</p>
+    <h2>6. 布局技术</h2>
+    <p>CSS可以实现多种布局技术，包括流式布局、浮动、定位、弹性布局等。</p>
+    <h2>7. 响应式设计</h2>
+    <p>CSS可以通过媒体查询和弹性布局等技术实现响应式设计，使网页能够适应不同设备和屏幕尺寸的展示。</p>
+</div>
+
+<!-- html语法 -->
+<div class="htmlgramma" id="htmlgramma" style="display: none;">
+    <h1>HTML基础介绍</h1>
+    <p>HTML（HyperText Markup Language）是一种用于创建网页的标记语言。</p>
+    <p>HTML文档由HTML元素构成，这些元素通过标记（tag）来描述页面的结构和内容。</p>
+    <h2>基本的HTML文档结构</h2>
+    <ul>
+        <li>&lt;!DOCTYPE html&gt;：文档类型声明，声明文档遵循的HTML版本。</li>
+        <li>&lt;html&gt;：HTML文档的根元素，包含整个HTML文档。</li>
+        <li>&lt;head&gt;：HTML文档的头部部分，包含了一些元数据和引用，不会直接显示在浏览器中。</li>
+        <li>&lt;title&gt;：定义文档的标题，显示在浏览器的标题栏或标签页上。</li>
+        <li>&lt;body&gt;：HTML文档的主体部分，包含了页面的实际内容。</li>
+    </ul>
+    <p>HTML元素可以嵌套，即一个元素可以包含另一个元素。</p>
+    <h2>HTML元素的结构</h2>
+    <p>HTML元素通常具有以下结构：</p>
+    <pre>&lt;element attribute="value"&gt;Content&lt;/element&gt;</pre>
+    <p>其中：</p>
+    <ul>
+        <li>&lt;element&gt;：HTML元素的标签，表示元素的类型。</li>
+        <li>attribute="value"：HTML元素的属性，提供关于元素的额外信息。</li>
+        <li>Content：HTML元素的内容，即元素所包含的文本、其他元素等。</li>
+    </ul>
+    <h2>示例</h2>
+    <p>一个简单的段落元素：</p>
+    <pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+    <p>HTML还支持注释：</p>
+    <pre>&lt;!-- This is a comment --&gt;</pre>
+    <p>以上是HTML语法的基本介绍，HTML语言非常灵活，可以用来构建各种类型的网页。</p>
+</div>
+ 
+<!-- web网页设计简单介绍 -->
+<div class="textcontrol" id="introduce_web">
+    <h2>Web 页面设计</h2>
+    <ul>
+        <li>开发环境：介绍了 Web 开发过程中常用的开发环境，例如编辑器、调试工具等。</li>
+        <li>HTML 标签：讲解了 HTML 中常用的标签，如 &lt;div&gt;、&lt;p&gt;、&lt;a&gt; 等，以及它们的作用和用法。</li>
+        <li>HTML5 语法：介绍了 HTML5 的新特性和语法，例如语义化标签、音视频标签、画布标签等。</li>
+        <li>HTML 元素：深入探讨了 HTML 元素的各种属性和用法，包括表单元素、图像元素、媒体元素等。</li>
+    </ul>
+
+    <h2>界面样式设计</h2>
+    <ul>
+        <li>CSS 定义：介绍了 CSS 的基本概念和语法，以及如何使用 CSS 来定义样式。</li>
+        <li>CSS 选择器：详细解释了 CSS 中的各种选择器，包括元素选择器、类选择器、ID 选择器等。</li>
+        <li>CSS 属性：介绍了 CSS 中常用的属性，如颜色、字体、背景等属性，并讲解了它们的用法。</li>
+        <li>排版：讲解了如何使用 CSS 进行页面的排版，包括文本排版、盒模型、浮动等技术。</li>
+        <li>布局版式：介绍了常见的页面布局方式，如响应式布局、栅格布局等。</li>
+    </ul>
+
+    <h2>JavaScript 编程开发</h2>
+    <ul>
+        <li>JavaScript 基础：讲解了 JavaScript 的基本语法、数据类型、运算符等内容。</li>
+        <li>脚本函数：介绍了 JavaScript 中的函数定义、调用、参数传递等相关知识。</li>
+        <li>事件处理：讲解了如何使用 JavaScript 处理各种事件，如点击事件、鼠标移动事件等。</li>
+        <li>DOM：深入探讨了文档对象模型（DOM），包括如何通过 JavaScript 操作页面元素、修改样式、处理事件等。</li>
+    </ul>
+
+    <h2>Web 开发框架</h2>
+    <ul>
+        <li>Bootstrap：介绍了 Bootstrap 框架的基本使用方法，以及如何利用 Bootstrap 快速构建响应式网页。</li>
+        <li>jQuery：讲解了 jQuery 框架的常用功能和语法，如选择器、事件处理、动画效果等。</li>
+        <li>Highcharts：介绍了 Highcharts 库，以及如何使用它创建交互式的图表和数据可视化。</li>
+    </ul>
+
+    <h2>Html5 App 开发</h2>
+    <ul>
+        <li>Html5 App：介绍了基于 HTML5 技术开发的移动应用程序，包括 Web App 和 Hybrid App 的开发方法。</li>
+        <li>WeX5：讲解了 WeX5 框架，它是一个基于 HTML5 的移动应用开发框架，提供了丰富的组件和功能。</li>
+        <li>DCloud：介绍了 DCloud 平台，它是一个面向开发者的移动应用开发平台，支持 HTML5、CSS 和 JavaScript 开发。</li>
+    </ul>
+
+    <h2>Web 综合案例</h2>
+    <ul>
+        <li>智能仓储系统设计：提供了一个实际的案例，展示了如何将上述所学的技术应用到实际的项目中，设计和开发一个智能仓储系统。</li>
+    </ul>
+</div>
+<div class="environmentInfo" id="devEnvironmentInfo" style="display: none;">
+    <h1>开发环境介绍</h1>
+    <p>开发环境是指用于进行 Web 开发的工具和软件环境。常见的开发环境包括：</p>
+    <ul>
+        <li>文本编辑器，如Visual Studio Code、Sublime Text等。</li>
+        <li>集成开发环境（IDE），如Eclipse、IntelliJ IDEA等。</li>
+        <li>版本控制系统，如Git。</li>
+        <li>命令行工具，如Node.js、npm、yarn等。</li>
+        <li>调试工具，如Chrome开发者工具、Firebug等。</li>
+    </ul>
+    <p>选择合适的开发环境对于提高开发效率和质量至关重要。建议根据个人需求和项目特点选择合适的工具和环境。</p>
+</div>
+
+<div class="sometable" id="sometable" style="display: none;">
+    <h2>HTML（Hypertext Markup Language）标签是用于创建网页结构和内容的元素。HTML标签由尖括号包围，通常成对出现，包括起始标签和结束标签。起始标签包含元素的名称，结束标签在名称前加上斜杠（/）。</h2>
+    <h3>以下是一些常用的HTML标签及其功能：</h3>
+    <ul>
+        <li onclick="showDevEnvironment('html')">&lt;html&gt;：定义HTML文档的根元素。</li>
+        <li onclick="showDevEnvironment('head')">&lt;head&gt;：定义文档的头部，包含了一些元数据，如标题、字符编码等。</li>
+        <li onclick="showDevEnvironment('title')">&lt;title&gt;：定义文档的标题，显示在浏览器的标题栏或标签页上。</li>
+        <li onclick="showDevEnvironment('body')">&lt;body&gt;：定义文档的主体部分，包含页面的实际内容。</li>
+        <li onclick="showDevEnvironment('h1')">&lt;h1&gt; - &lt;h6&gt;：定义标题，&lt;h1&gt;是最高级别的标题，&lt;h6&gt;是最低级别的标题。</li>
+        <li onclick="showDevEnvironment('p')">&lt;p&gt;：定义段落。</li>
+        <li onclick="showDevEnvironment('a')">&lt;a&gt;：定义超链接，用于创建指向其他网页或资源的链接。</li>
+        <li onclick="showDevEnvironment('img')">&lt;img&gt;：定义图像，用于在页面中显示图像。</li>
+        <li onclick="showDevEnvironment('ul')">&lt;ul&gt;：定义无序列表。</li>
+        <li onclick="showDevEnvironment('ol')">&lt;ol&gt;：定义有序列表。</li>
+        <li onclick="showDevEnvironment('li')">&lt;li&gt;：定义列表项。</li>
+        <li onclick="showDevEnvironment('div')">&lt;div&gt;：定义文档中的分区或节（division），用于组织页面结构。</li>
+        <li onclick="showDevEnvironment('span')">&lt;span&gt;：定义文档中的行内元素，通常用于设置样式或添加脚本。</li>
+        <li onclick="showDevEnvironment('table')">&lt;table&gt;：定义表格。</li>
+        <li onclick="showDevEnvironment('tr')">&lt;tr&gt;：定义表格中的行。</li>
+        <li onclick="showDevEnvironment('td')">&lt;td&gt;：定义表格中的单元格。</li>
+        <li onclick="showDevEnvironment('form')">&lt;form&gt;：定义表单，用于接收用户输入的数据。</li>
+        <li onclick="showDevEnvironment('input')">&lt;input&gt;：定义表单中的输入控件，如文本框、复选框、单选按钮等。</li>
+        <li onclick="showDevEnvironment('textarea')">&lt;textarea&gt;：定义文本输入区域，用于多行文本输入。</li>
+    </ul>
+    <p>这些是HTML中的一些常见标签，用于创建各种类型的网页内容和结构。通过组合和嵌套这些标签，可以创建出丰富多样的网页。下面的表格是目前更新的最新版标签。</p>
+</div>
+
+<div class="tablestyle" id="html" style="display: none;">
+    <p><strong>&lt;html&gt;</strong> 标签是 HTML 文档的根元素，它定义了整个 HTML 文档的开始和结束位置。在 HTML 文档中，<strong>&lt;html&gt;</strong> 标签包含了文档中的所有其他元素，并提供了文档的结构。</p>
+    <p>以下是 <strong>&lt;html&gt;</strong> 标签的一些关键特点：</p>
+    <ul>
+        <li><strong>根元素：</strong> <strong>&lt;html&gt;</strong> 标签是 HTML 文档的根元素，所有其他 HTML 元素都必须位于它的内部。</li>
+        <li><strong>开始标签和结束标签：</strong> <strong>&lt;html&gt;</strong> 标签由开始标签 <strong>&lt;html&gt;</strong> 和结束标签 <strong>&lt;/html&gt;</strong> 组成。开始标签表示元素的开始，结束标签表示元素的结束。</li>
+        <li><strong>包含整个文档：</strong> <strong>&lt;html&gt;</strong> 标签包含了整个 HTML 文档的内容，包括文档的头部（<strong>&lt;head&gt;</strong>）和主体（<strong>&lt;body&gt;</strong>）。</li>
+        <li><strong>文档声明：</strong> 通常情况下，<strong>&lt;html&gt;</strong> 标签的开始标签处会紧跟文档类型声明（<strong>&lt;!DOCTYPE&gt;</strong>），以指定 HTML 文档的版本和类型。</li>
+    </ul>
+</div>
+
+<div class="tablestyle" id="head" style="display: none;">
+    <p><strong>&lt;head&gt; 标签是 HTML 文档的头部部分，位于 &lt;html&gt; 标签内部，但在页面内容之前。</strong></p>
+    <p><strong>&lt;head&gt; 标签用于包含一些重要的元数据和引用，这些内容不会直接显示在浏览器中，但对网页的结构和显示起着重要作用。</strong></p>
+    <p><strong>&lt;head&gt; 标签通常包含以下一些常见的子元素：</strong></p>
+    <ul>
+        <li><strong>&lt;title&gt;</strong>：定义网页的标题，显示在浏览器的标题栏或标签页上。</li>
+        <li><strong>&lt;meta&gt;</strong>：定义网页的元数据，如字符编码、关键字、描述等。</li>
+        <li><strong>&lt;link&gt;</strong>：定义文档与外部资源的关系，通常用于引入外部样式表（CSS）和网站图标（favicon）等。</li>
+        <li><strong>&lt;style&gt;</strong>：定义内部样式表，用于设置网页的样式。</li>
+        <li><strong>&lt;script&gt;</strong>：定义 JavaScript 脚本，用于处理网页的交互和动态效果。</li>
+    </ul>
+</div>
+
+<div class="tablestyle" id="title" style="display: none;">
+    <p><strong>&lt;title&gt; 标签用于定义网页的标题，显示在浏览器的标题栏或标签页上。</strong></p>
+    <p><strong>&lt;title&gt; 标签是 HTML 文档中必不可少的一部分，它提供了关于网页内容的简要描述。</strong></p>
+    <p><strong>网页的标题通常包含了网站的名称、页面的主题或描述等关键信息，是用户识别和区分不同页面的重要标识。</strong></p>
+    <p><strong>&lt;title&gt; 标签应该放在 &lt;head&gt; 标签内部，并且必须是 &lt;head&gt; 标签内的第一个子元素。</strong></p>
+    <p><strong>例如：</strong></p>
+    <pre>
+        <code>
+            &lt;head&gt;
+                &lt;title&gt;我的网站&lt;/title&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="description" content="欢迎访问我的网站"&gt;
+                &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/title.png">
+</div>
+
+<div class="tablestyle" id="body" style="display: none;">
+    <p><strong>&lt;body&gt; 标签定义了 HTML 文档的主体部分，包含了页面的实际内容。</strong></p>
+    <p><strong>&lt;body&gt; 标签内部包含了所有要在浏览器中显示的内容，如文本、图像、链接、表格等。</strong></p>
+    <p><strong>&lt;body&gt; 标签是 HTML 文档中必不可少的一部分，它是页面结构的核心部分。</strong></p>
+    <p><strong>&lt;body&gt; 标签应该位于 &lt;html&gt; 标签内部，并且在 &lt;html&gt; 标签内的第一个子元素之后。</strong></p>
+    <p><strong>例如：</strong></p>
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;我的网站&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;欢迎访问我的网站&lt;/h1&gt;
+                &lt;p&gt;这是我的第一个网页&lt;/p&gt;
+                &lt;img src="example.jpg" alt="示例图片"&gt;
+                &lt;a href="about.html"&gt;关于我们&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/body.png">
+</div>
+
+<div class="tablestyle" id="h1" style="display: none;">
+    <p><strong>&lt;h1&gt; 到 &lt;h6&gt; 标签用于定义标题，是 HTML 中用于表示标题级别的一组标签。</strong></p>
+    <p><strong>&lt;h1&gt; 是最高级别的标题，&lt;h6&gt; 是最低级别的标题。</strong></p>
+    <p><strong>这些标题标签通常用于组织和结构化文档内容，并提供了视觉上的层次感。</strong></p>
+    <p><strong>&lt;h1&gt; 到 &lt;h6&gt; 标签在语义上表示标题的重要性和层次关系，而不仅仅是字体大小或样式的变化。</strong></p>
+    <p><strong>以下是 &lt;h1&gt; 到 &lt;h6&gt; 标签的使用示例：</strong></p>
+    <pre>
+        <code>
+            &lt;h1&gt;这是一级标题&lt;/h1&gt;
+            &lt;h2&gt;这是二级标题&lt;/h2&gt;
+            &lt;h3&gt;这是三级标题&lt;/h3&gt;
+            &lt;h4&gt;这是四级标题&lt;/h4&gt;
+            &lt;h5&gt;这是五级标题&lt;/h5&gt;
+            &lt;h6&gt;这是六级标题&lt;/h6&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/h1.png">
+</div>
+
+<div class="tablestyle" id="p" style="display: none;">
+    <p><strong>&lt;p&gt; 标签用于定义段落。</strong></p>
+    <p><strong>它是 HTML 中最常用的文本块级元素之一，用于对文本内容进行段落化处理。</strong></p>
+    <p><strong>&lt;p&gt; 标签定义了一个段落的开头和结尾，并在段落之间自动插入一些空白。</strong></p>
+    <p><strong>段落通常被用于组织和结构化文档中的文本内容，使其更易于阅读和理解。</strong></p>
+    <p><strong>以下是 &lt;p&gt; 标签的使用示例：</strong></p>
+    <pre>
+        <code>
+            &lt;p&gt;这是第一个段落。&lt;/p&gt;
+            &lt;p&gt;这是第二个段落。&lt;/p&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/p.png">
+</div>
+
+<div class="tablestyle" id="a" style="display: none;"> 
+    <p><strong>&lt;a&gt; 标签用于创建超链接，即链接到其他网页或资源。</strong></p>
+    <p><strong>它是 HTML 中的锚元素（anchor element），用于定义链接目标。</strong></p>
+    <p><strong>&lt;a&gt; 标签的 href 属性用于指定链接的目标地址，可以是一个 URL 地址，也可以是一个本地文件的路径。</strong></p>
+    <p><strong>当用户点击链接时，浏览器会跳转到 href 属性指定的目标地址。</strong></p>
+    <p><strong>如果希望在新窗口中打开链接，可以通过设置 target 属性为 "_blank" 来实现。</strong></p>
+    <p><strong>&lt;a&gt; 标签的文本内容通常是链接的显示文本，用户点击该文本时将触发链接跳转。</strong></p>
+    <p><strong>以下是 &lt;a&gt; 标签的基本语法：</strong></p>
+    <pre>
+        <code>
+            &lt;a href="https://jiejieliang.github.io/menu/htmltable.html"&gt;点击这里&lt;/a&gt;
+        </code>
+    </pre>
+    <p><strong><a href="https://jiejieliang.github.io/menu/htmltable.html">在这个例子中，链接的目标地址是 "https://jiejieliang.github.io/menu/htmltable.html"，显示文本是 "点击这里"。</a></strong></p>
+</div>
+
+<div class="tablestyle" id="img" style="display: none;">
+    <p><strong>&lt;img&gt; 标签用于在网页中插入图像。</strong></p>
+    <p><strong>它是 HTML 中的一个空元素，不需要闭合标签。</strong></p>
+    <p><strong>&lt;img&gt; 标签通过 src 属性指定图像的 URL，即图像文件的路径。</strong></p>
+    <p><strong>图像可以是本地文件路径，也可以是网络上的 URL 地址。</strong></p>
+    <p><strong>&lt;img&gt; 标签的 alt 属性用于定义图像的替代文本，当图像无法显示时，替代文本将会显示在页面上。</strong></p>
+    <p><strong>以下是 &lt;img&gt; 标签的基本语法：</strong></p>
+    <pre>
+        <code>
+            &lt;img src="image.jpg" alt="描述性文本"&gt;
+        </code>
+    </pre>
+    <p><strong>在这个例子中，图像的路径是 "image.jpg"，描述性文本是 "描述性文本"。</strong></p>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/img.png">
+</div>
+
+<div class="tablestyle" id="ul" style="display: none;">
+    <h2>&lt;ul&gt;：定义无序列表</h2>
+    <p>无序列表是 HTML 中用于表示项目无特定顺序的列表。</p>
+    <p>无序列表使用 &lt;ul&gt; 标签来定义，列表项使用 &lt;li&gt; 标签来表示。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;ul&gt;
+                &lt;li&gt;苹果&lt;/li&gt;
+                &lt;li&gt;香蕉&lt;/li&gt;
+                &lt;li&gt;橙子&lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/ul.png">
+</div>
+
+<div class="tablestyle" id="ol" style="display: none;">
+    <h2>&lt;ol&gt;：定义有序列表</h2>
+    <p>有序列表是 HTML 中用于表示项目按特定顺序排列的列表。</p>
+    <p>有序列表使用 &lt;ol&gt; 标签来定义，列表项同样使用 &lt;li&gt; 标签来表示。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;ol&gt;
+                &lt;li&gt;第一项&lt;/li&gt;
+                &lt;li&gt;第二项&lt;/li&gt;
+                &lt;li&gt;第三项&lt;/li&gt;
+            &lt;/ol&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/ol.png">
+</div>
+
+
+<div class="tablestyle" id="div" style="display: none;">
+    <h2>&lt;div&gt;：定义文档中的分区或节（division），用于组织页面结构</h2>
+    <p>&lt;div&gt; 标签是 HTML 中的块级元素，用于创建一个逻辑分区或节，用于组织页面的结构和布局。</p>
+    <p>通常与 CSS 样式一起使用，用于控制页面布局和样式。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;div id="header"&gt;
+                &lt;h1&gt;这是标题&lt;/h1&gt;
+                &lt;p&gt;这是段落&lt;/p&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/div.png">
+</div>
+
+<div class="tablestyle" id="span" style="display: none;">
+    <h2>&lt;span&gt;：定义文档中的行内元素，通常用于设置样式或添加脚本</h2>
+    <p>&lt;span&gt; 标签是 HTML 中的行内元素，用于在文本中分隔一小段内容，常用于设置样式或添加脚本。</p>
+    <p>通常与 CSS 样式一起使用，用于对文本的样式进行精细化控制。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;p&gt;这是一段包含 &lt;span style="color: red"&gt;红色&lt;/span&gt; 文字的段落。&lt;/p&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/span.png">
+</div>
+
+<div class="tablestyle" id="li" style="display: none;">
+    <h2>&lt;li&gt;：定义列表项</h2>
+    <p>&lt;li&gt; 标签用于定义列表（无序列表或有序列表）中的每个列表项。</p>
+    <p>&lt;li&gt; 标签必须包含在 &lt;ul&gt; 或 &lt;ol&gt; 标签内部。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;ul&gt;
+                &lt;li&gt;苹果&lt;/li&gt;
+                &lt;li&gt;香蕉&lt;/li&gt;
+                &lt;li&gt;橙子&lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/ul.png">
+</div>
+
+<div class="tablestyle" id="table" style="display: none;">
+    <h2>&lt;table&gt;：定义表格</h2>
+    <p>&lt;table&gt; 标签用于创建 HTML 表格。</p>
+    <p>表格由行（&lt;tr&gt;）、列（&lt;td&gt;）、表头（&lt;th&gt;）等组成。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;姓名&lt;/th&gt;
+                    &lt;th&gt;年龄&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;张三&lt;/td&gt;
+                    &lt;td&gt;25&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/table.png">
+</div>
+
+<div class="tablestyle" id="tr" style="display: none;">
+    <h2>&lt;tr&gt;：定义表格中的行</h2>
+    <p>&lt;tr&gt; 标签用于定义表格中的行。</p>
+    <p>表格中的每一行都由 &lt;tr&gt; 标签来表示。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;tr&gt;
+                &lt;td&gt;姓名&lt;/td&gt;
+                &lt;td&gt;年龄&lt;/td&gt;
+            &lt;/tr&gt;
+        </code>
+    </pre>
+</div>
+
+<div class="tablestyle" id="td" style="display: none;">
+    <h2>&lt;td&gt;：定义表格中的单元格</h2>
+    <p>&lt;td&gt; 标签用于定义表格中的单元格。</p>
+    <p>表格中的每个单元格由 &lt;td&gt; 标签来表示。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;tr&gt;
+                &lt;td&gt;张三&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+        </code>
+    </pre>
+</div>
+
+<div class="tablestyle" id="form" style="display: none;">
+    <h2>&lt;form&gt;：定义表单</h2>
+    <p>&lt;form&gt; 标签用于创建 HTML 表单。</p>
+    <p>表单是用于向服务器提交数据的用户交互界面。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;form action="/submit" method="post"&gt;
+                姓名: &lt;input type="text" name="name"&gt;&lt;br&gt;
+                &lt;input type="submit" value="提交"&gt;
+            &lt;/form&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/form.png">
+</div>
+
+<div class="tablestyle" id="input" style="display: none;">
+    <h2>&lt;input&gt;：定义表单中的输入控件</h2>
+    <p>&lt;input&gt; 标签用于在表单中创建各种类型的输入控件，如文本框、复选框、单选按钮等。</p>
+    <p>根据不同的 type 属性值，&lt;input&gt; 标签可以创建不同类型的输入控件。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;input type="text" name="username"&gt;
+            &lt;input type="checkbox" name="agree"&gt;
+            &lt;input type="radio" name="gender" value="male"&gt;
+            &lt;input type="submit" value="提交"&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/input.png">
+</div>
+
+<div class="tablestyle" id="textarea" style="display: none;">
+    <h2>&lt;textarea&gt;：定义文本输入区域</h2>
+    <p>&lt;textarea&gt; 标签用于创建多行的文本输入区域，通常用于用户输入长文本。</p>
+    <p>文本区域的内容可以在提交表单时包含在表单数据中。</p>
+    <p>示例：</p>
+    <pre>
+        <code>
+            &lt;textarea name="message" rows="4" cols="50"&gt;
+                在这里输入文本...
+            &lt;/textarea&gt;
+        </code>
+    </pre>
+    <h3>实例展示效果:</h3>
+    <img src="../pic/textarea.png">
+</div>
+
+<table class="reference notranslate" id="table1" style="display: none;">
+    <tbody>
+    <tr>
+    <th align="left" width="25%">标签</th>
+    <th align="left" width="75%">描述</th>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;!--...--&gt;</a></td>
+    <td>定义注释</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;!DOCTYPE&gt;</a></td>
+    <td>定义文档类型</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;a&gt;</a></td>
+    <td>定义超文本链接</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;abbr&gt;</a></td>
+    <td>定义缩写</td>
+    </tr>
+    <tr>
+    <td><a class="notsupported" href="#">&lt;acronym&gt;</a></td>
+    <td><span class="deprecated">定义只取首字母的缩写，不支持HTML5</span></td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;address&gt;</a></td>
+    <td>定义文档作者或拥有者的联系信息</td>
+    </tr>
+    <tr>
+    <td><a class="notsupported" href="#">&lt;applet&gt;</a></td>
+    <td>HTML5中不赞成使用。定义嵌入的 applet。</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;area&gt;</a></td>
+    <td>定义图像映射内部的区域</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;article&gt;</a><span class="new">New</span></td>
+    <td>定义一个文章区域</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;aside&gt;</a><span class="new">New</span></td>
+    <td>定义页面的侧边栏内容</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;audio&gt;</a><span class="new">New</span></td>
+    <td>定义音频内容</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;b&gt;</a></td>
+    <td>定义文本粗体</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;base&gt;</a></td>
+    <td>定义页面中所有链接的默认地址或默认目标。</td>
+    </tr>
+    <tr>
+    <td><a class="notsupported" href="#">&lt;basefont&gt;</a></td>
+    <td>HTML5不支持，不赞成使用。定义页面中文本的默认字体、颜色或尺寸。</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;bdi&gt;</a><span class="new">New</span></td>
+    <td>允许您设置一段文本，使其脱离其父元素的文本方向设置。</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;bdo&gt;</a></td>
+    <td>定义文字方向</td>
+    </tr>
+    <tr>
+    <td><a class="notsupported" href="#">&lt;big&gt;</a></td>
+    <td>定义大号文本，HTML5不支持</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;blockquote&gt;</a></td>
+    <td>定义长的引用</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;body&gt;</a></td>
+    <td>定义文档的主体</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;br&gt;</a></td>
+    <td>定义换行</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;button&gt;</a></td>
+    <td>定义一个点击按钮</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;canvas&gt;</a><span class="new">New</span></td>
+    <td>定义图形，比如图表和其他图像,标签只是图形容器，您必须使用脚本来绘制图形</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;caption&gt;</a></td>
+    <td>定义表格标题</td>
+    </tr>
+    <tr>
+    <td><a class="notsupported" href="#">&lt;center&gt;</a></td>
+    <td>HTML5不支持，不赞成使用。定义居中文本。</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;cite&gt;</a></td>
+    <td>定义引用(citation)</td>
+    </tr>
+    <tr>
+    <td><a href="#">&lt;code&gt;</a></td>
+    <td>定义计算机代码文本</td>
+    </tr>
+    <tr>
+    <td><a href=#>&lt;col&gt;</a></td>
+    <td>定义表格中一个或多个列的属性值</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;colgroup&gt;</a></td>
+        <td>定义表格中供格式化的列组</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;command&gt;</a><span class="new">New</span></td>
+        <td>定义命令按钮，比如单选按钮、复选框或按钮</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;datalist&gt;</a><span class="new">New</span></td>
+        <td>定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;dd&gt;</a></td>
+        <td>定义定义列表中项目的描述</td>
+    </tr>    
+    <tr>
+        <td><a href="#">&lt;del&gt;</a></td>
+        <td>定义被删除文本</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;details&gt;</a><span class="new">New</span></td>
+        <td>用于描述文档或文档某个部分的细节</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;dfn&gt;</a></td>
+        <td>定义定义项目</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;dialog&gt;</a><span class="new">New</span></td>
+        <td>定义对话框，比如提示框</td>
+    </tr>
+    <tr>
+        <td><a class="notsupported" href="#">&lt;dir&gt;</a></td>
+        <td>HTML5不支持，不赞成使用。定义目录列表。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;div&gt;</a></td>
+        <td>定义文档中的节</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;dl&gt;</a></td>
+        <td>定义列表详情</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;dt&gt;</a></td>
+        <td>定义列表中的项目</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;em&gt;</a></td>
+        <td>定义强调文本</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;embed&gt;</a><span class="new">New</span></td>
+        <td>定义嵌入的内容，比如插件。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;fieldset&gt;</a></td>
+        <td>定义围绕表单中元素的边框</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;figcaption&gt;</a><span class="new">New</span></td>
+        <td>定义&lt;figure&gt; 元素的标题</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;figure&gt;</a><span class="new">New</span></td>
+        <td>规定独立的流内容（图像、图表、照片、代码等等）。</td>
+    </tr>
+    <tr>
+        <td><a class="notsupported" href="#">&lt;font&gt;</a></td>
+        <td>HTML5不支持，不赞成使用。定义文字的字体、尺寸和颜色。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;footer&gt;</a><span class="new">New</span></td>
+        <td>定义 section 或 document 的页脚。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;form&gt;</a></td>
+        <td>定义了HTML文档的表单</td>
+    </tr>
+    <tr>
+        <td><a class="notsupported" href="#">&lt;frame&gt;</a></td>
+        <td>定义框架集的窗口或框架</td>
+    </tr>
+    
+    <tr>
+        <td><a class="notsupported" href="#">&lt;frameset&gt;</a></td>
+        <td>定义框架集</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;h1&gt; to &lt;h6&gt;</a></td>
+        <td>定义 HTML 标题</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;head&gt;</a></td>
+        <td>定义关于文档的信息</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;header&gt;</a><span class="new">New</span></td>
+        <td>定义了文档的头部区域</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;hr&gt;</a></td>
+        <td>定义水平线</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;html&gt;</a></td>
+        <td>定义 HTML 文档</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;i&gt;</a></td>
+        <td>定义斜体字</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;iframe&gt;</a></td>
+        <td>定义内联框架</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;img&gt;</a></td>
+        <td>定义图像</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;input&gt;</a></td>
+        <td>定义输入控件</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;ins&gt;</a></td>
+        <td>定义被插入文本</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;kbd&gt;</a></td>
+        <td>定义键盘文本</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;keygen&gt;</a><span class="new">New</span></td>
+        <td>规定用于表单的密钥对生成器字段。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;label&gt;</a></td>
+        <td>定义 input 元素的标注</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;legend&gt;</a></td>
+        <td>定义 fieldset 元素的标题。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;li&gt;</a></td>
+        <td>定义列表的项目</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;link&gt;</a></td>
+        <td>定义文档与外部资源的关系</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;main&gt;</a></td>
+        <td>定义文档的主体部分。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;map&gt;</a></td>
+        <td>定义图像映射</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;mark&gt;</a><span class="new">New</span></td>
+        <td>定义带有记号的文本。请在需要突出显示文本时使用 &lt;em&gt; 标签。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;menu&gt;</a></td>
+        <td>不赞成使用。定义菜单列表。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;meta&gt;</a></td>
+        <td>定义关于 HTML 文档的元信息。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;meter&gt;</a><span class="new">New</span></td>
+        <td>定义度量衡。仅用于已知最大和最小值的度量。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;nav&gt;</a><span class="new">New</span></td>
+        <td>定义导航链接的部分</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;noframes&gt;</a></td>
+        <td>定义针对不支持框架的用户的替代内容。HTML5不支持</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;noscript&gt;</a></td>
+        <td>定义针对不支持客户端脚本的用户的替代内容。</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;object&gt;</a></td>
+        <td>定义内嵌对象</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;ol&gt;</a></td>
+        <td>定义有序列表。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;optgroup&gt;</a></td>
+        <td>定义选择列表中相关选项的组合。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;option&gt;</a></td>
+        <td>定义选择列表中的选项。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;output&gt;</a><span class="new">New</span></td>
+        <td>定义不同类型的输出，比如脚本的输出。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;p&gt;</a></td>
+        <td>定义段落。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;param&gt;</a></td>
+        <td>定义对象的参数。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;pre&gt;</a></td>
+        <td>定义预格式文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;progress&gt;</a><span class="new">New</span></td>
+        <td>定义运行中的进度（进程）。</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;q&gt;</a></td>
+        <td>定义短的引用。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;rp&gt;</a><span class="new">New</span></td>
+        <td>&lt;rp&gt; 标签在 ruby 注释中使用，以定义不支持 ruby 元素的浏览器所显示的内容。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;rt&gt;</a><span class="new">New</span></td>
+        <td>&lt;rt&gt; 标签定义字符（中文注音或字符）的解释或发音。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;ruby&gt;</a><span class="new">New</span></td>
+        <td>&lt;ruby&gt; 标签定义 ruby 注释（中文注音或字符）。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;s&gt;</a></td>
+        <td>不赞成使用。定义加删除线的文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;samp&gt;</a></td>
+        <td>定义计算机代码样本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;script&gt;</a></td>
+        <td>定义客户端脚本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;section&gt;</a><span class="new">New</span></td>
+        <td>&lt;section&gt; 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;select&gt;</a></td>
+        <td>定义选择列表（下拉列表）。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;small&gt;</a></td>
+        <td>定义小号文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;source&gt;</a><span class="new">New</span></td>
+        <td>&lt;source&gt; 标签为媒介元素（比如 &lt;video&gt; 和 &lt;audio&gt;）定义媒介资源。</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;span&gt;</a></td>
+        <td>定义文档中的节。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;strike&gt;</a></td>
+        <td>HTML5不支持，不赞成使用。定义加删除线文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;strong&gt;</a></td>
+        <td>定义强调文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;style&gt;</a></td>
+        <td>定义文档的样式信息。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;sub&gt;</a></td>
+        <td>定义下标文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;summary&gt;</a><span class="new">New</span></td>
+        <td>&lt;summary&gt; 标签包含 details 元素的标题，"details" 元素用于描述有关文档或文档片段的详细信息。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;sup&gt;</a></td>
+        <td>定义上标文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;table&gt;</a></td>
+        <td>定义表格。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;tbody&gt;</a></td>
+        <td>定义表格中的主体内容。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;td&gt;</a></td>
+        <td>定义表格中的单元。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;textarea&gt;</a></td>
+        <td>定义多行的文本输入控件。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;tfoot&gt;</a></td>
+        <td>定义表格中的表注内容（脚注）。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;th&gt;</a></td>
+        <td>定义表格中的表头单元格。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;thead&gt;</a></td>
+        <td>定义表格中的表头内容。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;time&gt;</a><span class="new">New</span></td>
+        <td>定义日期或时间，或者两者。</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;template&gt;</a><span class="new">New</span></td>
+        <td>定义在页面加载时隐藏的一些内容。</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#">&lt;title&gt;</a></td>
+        <td>定义文档的标题。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;tr&gt;</a></td>
+        <td>定义表格中的行。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;track&gt;</a><span class="new">New</span></td>
+        <td>&lt;track&gt; 标签为诸如 video 元素之类的媒介规定外部文本轨道。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;tt&gt;</a></td>
+        <td>定义打字机文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;u&gt;</a></td>
+        <td>不赞成使用。定义下划线文本。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;ul&gt;</a></td>
+        <td>定义无序列表。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;var&gt;</a></td>
+        <td>定义文本的变量部分。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;video&gt;</a><span class="new">New</span></td>
+        <td>&lt;video&gt; 标签定义视频，比如电影片段或其他视频流。</td>
+    </tr>
+    <tr>
+        <td><a href="#">&lt;wbr&gt;</a><span class="new">New</span></td>
+        <td>规定在文本中的何处适合添加换行符。</td>
+    </tr>
+  
+    </tbody>
+    </table>
+
+
+    
+<script src="../script/script.js"></script>
+</body>
+</html>
