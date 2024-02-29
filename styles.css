@@ -1,0 +1,620 @@
+/* 样式只是示例，可以根据需要进行修改 */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu > li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu > li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(212, 199, 199);
+    border: 1px solid #ccc;
+    padding-left: 0;
+}
+
+.menu ul li {
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu > li > a:hover {
+    background-color:rgb(169, 236, 236);
+}
+
+.textcontrol {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.textcontrol ul li{
+    text-align: start;
+}
+
+.environmentInfo{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.environmentInfo>ul>li{
+    text-align: start;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 25%;
+    margin-right: 15%;
+}
+  
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.sometable{
+    text-align: center;
+}
+
+.sometable {
+    margin-left: 25%;
+    margin-right: 20%;
+    text-align: start;
+}
+
+.tablestyle {
+    margin-left: 30%;
+    margin-right: 20%;
+    text-align: start;
+}
+
+.sometable ul li:hover{
+    background-color: #ffcccc; /* 设置悬停时的背景颜色 */
+    color: #990000; /* 设置悬停时的文字颜色 */
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+.htmlgramma {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.htmlgramma ul li{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.css {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+.css h1 {
+    color: #333;
+}
+.css p {
+    color: #666;
+}
+.css code {
+    font-family: Consolas, monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.css ul{
+    list-style-type: none;
+}
+
+.css1 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+.css1 h1 {
+    color: rgb(15, 14, 14);
+}
+.css1 h2 {
+    color: rgb(78, 51, 51);
+}
+.css1 p {
+    color: #666;
+}
+.css1 code {
+    font-family: Consolas, monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.css1 ul{
+    list-style-type: none;
+}
+
+.hovermesg span:hover{
+    background-color:rgb(169, 236, 236);
+}
+
+#hovereleid p::first-line{
+    font-weight: bold;
+    color: aqua;
+}
+
+/* 背景属性 */
+.background-properties {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* 尺寸和边距属性 */
+  .dimension-margin-properties {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #333;
+ 
+  }
+
+  /* 文本属性 */
+  .text-properties {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+  }
+
+  /* 布局属性 */
+  .layout-properties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+  }
+
+  /* 边框属性 */
+  .border-properties {
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+/* 
+  动画和过渡属性 */
+  .animation-transition-properties {
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .animation-transition-properties:hover {
+    background-color: #ccc;
+  }
+
+#selectstyle{
+    text-align: center;
+    width: 100%;
+    border: 2px solid #333;
+}
+#selectstyle:hover{
+    background-color: rgb(214, 170, 119);
+}
+
+.csspb {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+ .csspb h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+ .csspb p {
+    margin-bottom: 15px;
+  }
+
+
+  /* 盒子模型 */
+  .box-model {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: khaki;
+    text-align: center;
+}
+.box-model:hover{
+    background-color: lightblue;
+}
+
+/* 浮动布局 */
+.float-layout {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    text-align: center;
+}
+.float-layout:hover{
+    background-color: lightblue;
+}
+
+/* 定位布局 */
+.positioning-layout {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: khaki;
+    text-align: center;
+}
+.positioning-layout:hover{
+    background-color: lightblue;
+}
+
+/* Flexbox布局 */
+.flexbox-layout {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    text-align: center;
+}
+.flexbox-layout:hover{
+    background-color: lightblue;
+}
+
+/* Grid布局 */
+.grid-layout {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: khaki;
+    text-align: center;
+}
+.grid-layout:hover{
+    background-color: lightblue;
+}
+
+.demo1{
+    display: inline-block;
+   width: 200px;
+   height: 200px;
+   background-color: red;
+}   
+.demo2{
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+   background-color: green;
+}  
+.demo3{
+    display: inline-block;
+    width: 200px;
+   height: 200px;
+   background-color: blue;
+}  
+.demo4{
+   float:left;
+   width: 200px;
+   height: 200px;
+   background-color: red;
+}   
+.demo5{
+   float:left;
+   width: 200px;
+   height: 200px;
+   background-color: green;
+}  
+.demo6{
+   float:left;
+   width: 200px;
+   height: 200px;
+   background-color: blue;
+}       
+
+
+.container1 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+  }
+  
+  .absolute-box1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  
+  .relative-box1 {
+    position: relative;
+    top: 2000px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+  
+  .fixed-box1 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+
+
+  .container3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 20px;
+  }
+  
+  .item2 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid #000;
+  }
+
+
+  .container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    width: 320px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 20px;
+  }
+  
+  .item4 {
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid #000;
+  }
+
+  .container5 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    border: 1px solid #000;
+  }
+
+  .container5 p {
+    margin: 0;
+    border: 1px solid #000;
+  }
+
+
+  .container6 {
+    position: relative;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    left: 0; /* 将元素相对于视口左边缘定位 */
+}
+
+.container6 p {
+  margin-bottom: 20px;
+}
+
+
+  .container7 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .container7 h2, h3, p {
+    margin-bottom: 20px;
+  }
+  .jsfunction{
+      text-align: center;
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+.jsfunction h2:hover{
+    background-color: lightblue;
+}
+
+.jsthing{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.jsthing ul li{
+    list-style-type: none;
+}
+
+.dom{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.dom ul li{
+    list-style-type: none;
+}
+
+
+.domcode {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* 设置背景色 */
+    padding: 20px;
+}
+.code-section {
+    background-color: #fff; /* 设置代码部分背景色 */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.domcode pre {
+    white-space: pre-wrap;
+}
+.domcode code {
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    color: #333; /* 设置代码颜色 */
+}
+
+
+.container8 {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container8 h1, h2, p {
+    margin-top: 0;
+}
+
+
+.container9 {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container9 h1, h2, p {
+    margin-top: 0;
+}
+
+.container10 h1, h2, p {
+    margin-top: 0;
+}
+.container10 {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container11 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .container11 h1 {
+    color: #333;
+  }
+  .container11 p {
+    color: #666;
+  }
+
+
+ .container12 h2 {
+    color: #007bff;
+}
+.container12 p {
+    margin-bottom: 20px;
+}
+.container12{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+.container13{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
